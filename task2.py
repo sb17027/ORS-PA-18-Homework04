@@ -15,3 +15,26 @@
 * in which your solution might not work.
 ===================================================
 """
+
+def main():
+    n = int(input("Enter number of elements: "))
+    numberOfOdd = 0
+    numberOfEven = 0
+    list_of_numbers = []
+
+    i = 1
+    while i <= n:
+        newNumber = int(input("Enter new number for list: "))
+        if newNumber % 2 == 0:
+            numberOfEven += 1
+        else:
+            numberOfOdd += 1
+        list_of_numbers.append(newNumber)
+        i = i + 1
+
+    print(list_of_numbers)
+    print("Number of odd elements:", numberOfOdd)
+    print("Number of even elements:", numberOfEven)
+
+
+main()
