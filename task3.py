@@ -15,3 +15,16 @@
 * Use main() function to test your solution.
 ===================================================
 """
+import math
+def area_of_circle(r):
+    r = abs(r)
+    area = r*r*math.pi
+    return area
+
+def main():
+    r = 3
+    area = area_of_circle(r)
+    print("Area of circle of radius r is: ", area)
+
+main()
+
